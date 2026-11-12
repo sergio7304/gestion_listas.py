@@ -1,0 +1,30 @@
+listaConCosas = [44, 27.25, "Noviembre", "Jueves"]
+listaDos = [False, [12, 24], {"nombre":"Antonio"}, True, 46, (33, 22)]
+
+listaConCosas.extend(listaDos)
+enteros = []
+flotantes = []
+textos = []
+booleanos = []
+otros = []
+
+#Recorremos la listaConCosas y añadimos cada elemento a la lista que le corresponda.
+for elem in listaConCosas:
+
+
+
+    if isinstance(elem, bool):
+        booleanos.append(elem)
+    elif isinstance(elem, float):
+        flotantes.append(elem)
+    elif isinstance(elem, str):
+        textos.append(elem)
+    elif isinstance(elem, int):
+        enteros.append(elem)
+    else:
+        otros.append(elem)
+print(enteros," Lista de Enteros")
+print(flotantes, "Lista de Flotantes")
+print(textos, "Lista de Texto")
+print(booleanos, "Lista de Booleanos")
+print(otros, "Lista de Otros")
